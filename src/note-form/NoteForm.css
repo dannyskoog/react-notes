@@ -1,0 +1,45 @@
+.note-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  background: rgba(142, 99, 93, .2);
+  padding: 2rem;
+  border-radius: .3rem;
+}
+
+.note-form .row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.note-form input,
+.note-form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid rgba(142, 99, 93, .3);
+  outline-width: 0;
+  padding: .6rem .5rem;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.note-form textarea {
+  height: 10rem;
+  margin-top: 1rem;
+}
+
+.note-form input[type='submit'] {
+  display: block;
+  background: rgb(142, 99, 93);
+  border: none;
+  padding: .7rem 1rem;
+  cursor: pointer;
+  border-radius: .3rem;
+  color: #fff;
+}
+
+.note-form input[type='submit']:disabled {
+  cursor: not-allowed;
+  background: rgba(142, 99, 93, .5);
+}

@@ -1,0 +1,51 @@
+.note-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.note-list li {
+  background: rgba(142, 99, 93, .5);
+}
+
+.note-list li:nth-child(odd) {
+  background: rgba(142, 99, 93, .2);
+}
+
+.note-list .note-list-item {
+  display: grid;
+  grid-template-columns: 1fr auto minmax(5rem, auto) auto auto;
+  gap: 1rem;
+  padding: .5rem 1rem;
+  max-height: 1.5rem;
+  overflow: hidden;
+}
+
+.note-list .note-list-item.expanded {
+  max-height: none;
+}
+
+.note-list .note-list-item p:first-child {
+  margin-top: 0;
+}
+
+.note-list .note-list-item p:last-child {
+  margin-bottom: 0;
+}
+
+.note-list .remove,
+.note-list .toggle {
+  text-decoration: underline;
+  color: rgb(142, 99, 93);
+  cursor: pointer;
+}
+
+.note-list .date {
+  font-style: italic;
+}
+
+.note-list .no-notes {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+}
